@@ -10,11 +10,11 @@ A simple HTML JS integration of the iPay C2B gateway
 
 - The first screen allows the user to input their details.
 
-<img src="https://github.com/user-attachments/assets/6ee52a9d-0b8d-4d09-8730-0c4174a50a99" height="50%" width="70%"/>
+<img src="https://github.com/user-attachments/assets/38edaa2f-0315-4f47-88d1-e1486ed8c376" height="50%" width="70%"/>
 
 - The payment gateway screen offers the user a selection of different channels they could opt to complete payment with.
 
-<img src="https://github.com/user-attachments/assets/7efa9a7c-a375-4ca0-8a4b-594cf723d21e" height="50%" width="70%"/>
+<img src="https://github.com/user-attachments/assets/a1b99cf0-20f6-4874-afac-e8099b463ddd" height="50%" width="70%"/>
 
  Clone this repo:
 ```
