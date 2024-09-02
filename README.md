@@ -23,27 +23,7 @@ git clone https://github.com/thisgirlElan/iPay-C2B-JS-HTML.git
 
 ```
 
- Import dependencies 
-
-- With npm
-
-```
-
-npm install
-
-```
-
- Start express server
-
-- With node
-
-```
-
-node express.js
-
-```
-
-When the server is up and running, open the `index.html` file on your browser.
+ There are no dependencies to import :) 
 
 ### Good to Know
 
