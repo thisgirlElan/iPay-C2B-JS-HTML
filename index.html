@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPay Payments Gateway Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>iPay Payments Gateway</h1>
+
+<form id="paymentForm">
+
+    <label for="ttl">Amount:</label>
+    <input type="text" id="ttl" name="ttl" value="1">
+
+    <label for="tel">Telephone:</label>
+    <input type="text" id="tel" name="tel" value="254xxxxxxxxx">
+
+    <label for="eml">Email:</label>
+    <input type="text" id="eml" name="eml" value="example@mail.com">
+
+    <label for="curr">Currency:</label>
+    <input type="text" id="curr" name="curr" value="KES">
+
+    <button type="submit" id="submitButton">Generate Form</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
