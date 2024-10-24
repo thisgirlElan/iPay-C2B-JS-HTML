@@ -59,7 +59,7 @@ document
     // with card disabled and autopay enabled
     //  const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&mpesa=${mpesa}&airtel=${airtel}&equity=${equity}&pesalink=${pesalink}&bonga=${bonga}&vooma=${vooma}&unionpay=${unionpay}&creditcard=${creditcard}&debitcard=${debitcard}`;
 
-    // with both card and autopay enabled
+    // with just card and autopay enabled
     //  const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&mpesa=${mpesa}&airtel=${airtel}&equity=${equity}&pesalink=${pesalink}&bonga=${bonga}&vooma=${vooma}&unionpay=${unionpay}`;
 
     // out of the shell gateway without customization
