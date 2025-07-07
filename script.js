@@ -4,8 +4,8 @@ document
     event.preventDefault();
 
     const live = "1";
-    const oid = Math.random().toString(36).substring(7);
-    const inv = "iPay" + Math.random().toString(36).substring(7);
+    const oid = Math.random().toString(36).substring(7) + document.getElementById("curr").value;
+    const inv = "iPay" + Math.random().toString(36).substring(7) + document.getElementById("curr").value;
     const ttl = document.getElementById("ttl").value;
     const tel = document.getElementById("tel").value;
     const eml = document.getElementById("eml").value;
@@ -26,8 +26,9 @@ document
     const vooma = "0";
     const unionpay = "0";
     // to disable card programatically uncomment the below, it will display only the card option by default as it is
-    // const debitcard = '0';
-    // const creditcard = '0';
+    const debitcard = '0';
+    const creditcard = '0';
+    const lbk = 'https://www.google.com';
 
     const fields = {
       live: live,
@@ -42,7 +43,7 @@ document
       p2: p2,
       p3: p3,
       p4: p4,
-      cbk: "https://webhook.site/2e115c8a-0437-4ea7-a0c5-1819bddee8ec",
+      cbk: "https://7254-178-62-82-156.ngrok-free.app/payment-result.html", // cbk-server url
       cst: "1",
       crl: "2",
     };
@@ -57,13 +58,18 @@ document
     // to enable channel, basically have the required channel's flag read 1.
 
     // with card disabled and autopay enabled
-    //  const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&mpesa=${mpesa}&airtel=${airtel}&equity=${equity}&pesalink=${pesalink}&bonga=${bonga}&vooma=${vooma}&unionpay=${unionpay}&creditcard=${creditcard}&debitcard=${debitcard}`;
+    //  const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&creditcard=${creditcard}`;
+
+    // with lbk and autopay enabled
+     const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&lbk=${lbk}`;
+
+
 
     // with both card and autopay enabled
-    //  const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&mpesa=${mpesa}&airtel=${airtel}&equity=${equity}&pesalink=${pesalink}&bonga=${bonga}&vooma=${vooma}&unionpay=${unionpay}`;
+    //  const actionUrl = `https://payments.ipayafrica.com/v3/ke?autopay=${autopay}&mpesa=${mpesa}&airtel=${airtel}&equity=${equity}&pesalink=${pesalink}&bonga=${bonga}&vooma=${vooma}&unionpay=${unionpay}&creditcard=${creditcard}&debitcard=${debitcard}`;
 
     // out of the shell gateway without customization
-    const actionUrl = `https://payments.ipayafrica.com/v3/ke`;
+    // const actionUrl = `https://payments.ipayafrica.com/v3/ke`;
 
     console.log("Form action URL:", actionUrl);
 
