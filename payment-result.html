@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Processing Payment...</title>
+  <script>
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get("status");
+      const oid = params.get("oid");
+      const txncd = params.get("txncd");
+
+      const SUCCESS_CODE = "aei7p7yrx4ae34"; // iPay success code
+
+      if (status === SUCCESS_CODE) {
+        window.location.href = `/success.html?oid=${oid}&txncd=${txncd}`;
+      } else {
+        window.location.href = `/failure.html?oid=${oid}&status=${status}`;
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Processing payment, please wait...</p>
+</body>
+</html>
